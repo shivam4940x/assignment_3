@@ -8,8 +8,8 @@ export default function Signup(props) {
   const [mobile, setmobile] = useState(false); 
   const signup = props.type === "signup" ? true : false;
   useEffect(() => {
-    const handleResize = () => setmobile(window.innerWidth <= 400);
-    if (window.innerWidth <= 400) {
+    const handleResize = () => setmobile(window.innerWidth <= 549);
+    if (window.innerWidth <= 549) {
       handleResize();
     }
            window.addEventListener("resize", handleResize);

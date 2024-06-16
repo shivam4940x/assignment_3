@@ -22,9 +22,9 @@ function App() {
    const [mobile, setmobile] = useState(false); 
 
    useEffect(() => {
-     if (window.innerWidth <= 400) {
+     if (window.innerWidth <= 549) {
        setmobile(true);
-      }
+     }
       const signupWrapper = document.getElementById("signup-wrapper");
 const join_group_span = document.querySelector("header.mobile span");
 const signup_mobile = document.querySelector(".mobile.icon");

@@ -20,7 +20,7 @@ export default function Posts(props) {
       wrapper_style.height = !!props.bg;
   }
   useEffect(()=>{
-    if (window.innerWidth <= 400) {
+    if (window.innerWidth <= 549) {
       setmobile(true);
     }
   },[])
