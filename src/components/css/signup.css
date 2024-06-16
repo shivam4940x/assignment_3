@@ -80,7 +80,7 @@ width: 750px;
         width: 100vw;
     }
 }
-@media screen and (max-width:549pxpx) {
+@media screen and (max-width:549px) {
     #signup-wrapper > div{
     width: 100vw;
     height: 80vh;
