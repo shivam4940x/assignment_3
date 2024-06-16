@@ -1,0 +1,115 @@
+.signup-head{
+    height: 50px;
+    width: 100%;
+    background-color: #EFFFF4;
+    color: #008A45;
+  border-radius: 8px 8px 0 0;
+}
+main.signup{
+    height: calc(100% - 50px - 1em);
+    width: 100%;
+    display: grid;
+  grid-template-columns: auto auto;
+  padding: 2em;
+  padding-top: 10px;
+}
+.signup-content > form input,
+.signin-content > form input{
+border-radius: unset;
+height: 46px;
+background-color: #F7F8FA;}
+.signup-content h1,
+.signin-content h1{
+ font-size: calc(0.8rem + 1vw);
+    font-weight: 700;
+}
+.signin-content a,
+.signup-content a{
+    border-radius: 2px;
+    border-color: #D9D9DB;
+}
+#remove-signup{
+    position: absolute;
+    right:-5%;
+    top: -3%;
+    transform:translate(-50%,-50%);
+}
+#remove-signup:hover,
+#signup-btn-mobile:hover,
+#signin-btn-mobile:hover{
+    cursor: pointer;
+}
+#signup-wrapper{
+      width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none !important;
+}
+#signup-wrapper.active{
+    display: flex !important;
+}
+#signup-wrapper.active > div{
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 500ms ease-out;
+}
+#signup-wrapper.active > div.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+#signup-wrapper > div{
+width: 750px;
+  height: 553px;
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+}
+@media screen and (max-width:950px) {
+        #signup-wrapper > div {
+  width: 550px;
+  height: fit-content;
+  font-size: 72%;
+}
+}
+@media screen and (max-width:535px){
+    #signup-wrapper > div{
+        width: 100vw;
+    }
+}
+@media screen and (max-width:500px) {
+    #signup-wrapper > div{
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#signup-wrapper.active {
+    display: block !important;
+}
+.signup-content h1, .signin-content h1{
+    font-size: calc(1em + 1.3vw)
+}
+main.signup{
+    padding: 1.5em;
+}
+main.signup,
+main.signin{
+    grid-template-columns: auto
+}
+#remove-signup{
+    right: 0%;
+  top: 7%;
+}
+#remove-signup .path{
+fill: #212529;
+}
+#signup-btn-mobile{
+    font-size: 80%;
+  white-space: nowrap;
+}
+}

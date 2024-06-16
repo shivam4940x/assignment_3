@@ -1,0 +1,158 @@
+@media screen and (max-width:400px) {
+    #bg-cover {
+  height: 236px;
+    }
+    #bg-cover > div{
+        font-size: 70%;
+        bottom: 15%;
+  left: 5%;
+    }
+    #bg-cover > div h1{
+        font-size: calc(1em + 1.5vw);
+    }
+    #posts{
+        padding: unset;
+        font-size: 75%;
+    }
+    #posts p{
+        font-size: 13px;
+    }
+    #posts h1 {
+  font-size: 18px;
+    }
+    #options{
+        height: 50px;
+        padding: 0.4em 2em;
+        padding-bottom: 0;
+        font-size: 85%;
+    }
+    #options > div{
+        width: 106px;
+        height: 32px;
+        background-color: #F1F3F5;
+        font-weight: 500;
+        justify-content: start;
+        padding-left: 10px;
+        position: relative;
+    }
+       #options > div::before{
+position: absolute;
+  content: '';
+  right: 10px;
+  top: 50%;
+  transform: translate(0,-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid var(--font);
+       }
+    #posts > div > div{
+box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+    #posts,#options{
+        padding: 0 10vw;
+    }
+    #bg-cover > div{
+        left: calc(10% - 4vw);
+    }
+}
+@media screen and (max-width:1172px){
+
+    #posts h1{
+        font-size: 18px;
+    }
+    #posts p{
+        font-size: 15px;
+    }
+    #bg-cover > div{
+        bottom: 10%;
+    }
+    .logo > img{
+    max-width: 100px;
+    }
+    header{
+        font: 85%;
+    }
+}
+@media screen and (max-width:950px){
+    #posts, #options{
+      padding: 0 5vw;
+    }
+    header{
+        padding: 0 3em;
+    }
+}
+
+
+@media screen and (max-width:830px){
+        header{
+        padding: 0 2em;
+    }
+        #posts, #options{
+        padding: 0;
+    }
+    #options{
+        padding: 0 1em;
+    }
+    #posts aside{
+        margin: 0 2em;
+    }
+    #bg-cover > div{
+        left: 2%;
+    }
+    #options{
+        height: 60px;
+    }
+        #options div:nth-child(2) > button{
+      width: 110px;
+  height: 35px;
+  font-size: 80%;
+    }
+}
+@media screen and (max-width:700px){
+    .logo > img{
+        max-width: 80px;
+    }
+    #create-acc{
+        font-size: 80%;
+    }
+
+    #options div:nth-child(2) > button{
+      width: 80px;
+  height: 25px;
+  font-size: 73%;
+  padding-left: 5px;
+    }
+ #options div:nth-child(2) > button img{
+    width: 15px;
+  height: auto;
+}
+#options div:nth-child(2) > button:first-child i{
+    border-left: 3px ;
+  border-right: 3px;
+  border-top: 5px 
+}
+#options div:nth-child(2) span,
+#posts aside{
+    font-size: 80%;
+}
+#options li{
+    margin: 0 10px;
+        font-size: 80%;
+}
+.search > input{
+    width: 250px;
+}
+#search-bar > img{
+    width: 10px;
+  height: 10px;
+}
+.search > input::placeholder {
+font-size: 12px;
+}
+}
