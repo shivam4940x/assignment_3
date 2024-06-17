@@ -55,11 +55,13 @@ background-color: #F7F8FA;}
 #signup-wrapper.active > div{
     transform: translateY(200px);
     opacity: 0;
-    transition: all 500ms ease-out;
+    animation: divShow 300ms linear 1 forwards;
 }
-#signup-wrapper.active > div.show{
-    opacity: 1;
-    transform: translateY(0);
+@keyframes divShow {
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 #signup-wrapper > div{
 width: 750px;
